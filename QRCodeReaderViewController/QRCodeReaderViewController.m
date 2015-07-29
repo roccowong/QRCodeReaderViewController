@@ -213,7 +213,7 @@
     _switchCameraButton = [[QRCameraSwitchButton alloc] init];
     [_switchCameraButton setTranslatesAutoresizingMaskIntoConstraints:false];
     [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
-    // [self.view addSubview:_switchCameraButton];
+    [self.view addSubview:_switchCameraButton];
   }
 
   self.cancelButton                                       = [[UIButton alloc] init];
