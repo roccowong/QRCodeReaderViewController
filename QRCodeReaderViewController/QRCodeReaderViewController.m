@@ -209,12 +209,12 @@
     _codeReader.previewLayer.connection.videoOrientation = [QRCodeReader videoOrientationFromInterfaceOrientation:orientation];
   }
 // disable switch camera button
-  // if ([_codeReader hasFrontDevice]) {
-  //   _switchCameraButton = [[QRCameraSwitchButton alloc] init];
-  //   [_switchCameraButton setTranslatesAutoresizingMaskIntoConstraints:false];
-  //   [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
-  //   [self.view addSubview:_switchCameraButton];
-  // }
+  if ([_codeReader hasFrontDevice]) {
+    _switchCameraButton = [[QRCameraSwitchButton alloc] init];
+    [_switchCameraButton setTranslatesAutoresizingMaskIntoConstraints:false];
+    [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
+    // [self.view addSubview:_switchCameraButton];
+  }
 
   self.cancelButton                                       = [[UIButton alloc] init];
   _cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
