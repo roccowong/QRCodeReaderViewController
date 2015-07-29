@@ -210,10 +210,10 @@
   }
 
   if ([_codeReader hasFrontDevice]) {
-    _switchCameraButton = [[QRCameraSwitchButton alloc] init];
-    [_switchCameraButton setTranslatesAutoresizingMaskIntoConstraints:false];
-    [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_switchCameraButton];
+    // _switchCameraButton = [[QRCameraSwitchButton alloc] init];
+    // [_switchCameraButton setTranslatesAutoresizingMaskIntoConstraints:false];
+    // [_switchCameraButton addTarget:self action:@selector(switchCameraAction:) forControlEvents:UIControlEventTouchUpInside];
+    // [self.view addSubview:_switchCameraButton];
   }
 
   self.cancelButton                                       = [[UIButton alloc] init];
